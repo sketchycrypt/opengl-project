@@ -1,15 +1,10 @@
 # OpenGL DOOM-like Videogame Project
 
-This repository contains the source code and assets for an OpenGL DOOM-like videogame project. The goal of this project is to create a first-person shooter game with similar gameplay mechanics and aesthetics to the classic game DOOM.
+this is a project im making for the fun of it to get used to cpp programming
 
 ## Goals
 
-- First-person 
-- Fast-paced action
-- Multiple levels with increasing difficulty
-- Variety of weapons and power-ups
-- Enemies with different behaviors and attack patterns
-- Interactive environment with doors, switches, and secret areas
+- get the game to work
 
 ## Controls
 
@@ -22,7 +17,7 @@ This repository contains the source code and assets for an OpenGL DOOM-like vide
 
 ## Contributing
 
-Contributions are welcome! If you would like to contribute to this project, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+contributing to clean code is welcome with appropriate documentation but adding features im not allowing
 
 ## License
 

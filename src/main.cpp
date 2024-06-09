@@ -2,9 +2,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-using namespace std; 
+using namespace std;
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+void framebuffer_size_callback(GLFWwindow *window, int width, int height)
 {
     glViewport(0, 0, width, height);
 }
@@ -22,8 +22,8 @@ int main()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* window;
-    window = glfwCreateWindow(500, 800, "game window", NULL, NULL);
+    GLFWwindow *window;
+    window = glfwCreateWindow(600, 800, "game window", NULL, NULL);
     if (window == NULL)
     {
         cout << "Failed to open GLFW window" << endl;
@@ -37,13 +37,13 @@ int main()
         return -1;
     }
 
-    glViewport(0, 0, 800, 600);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
-    while(!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(window))
     {
         glfwSwapBuffers(window);
-        glfwPollEvents();    
+        glfwPollEvents();
+        glClearColor(1.00f, 0.00f, 0.00f, 1.00f);
+        glClear(GL_COLOR_BUFFER_BIT);
+        glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     }
 
     glfwTerminate();
